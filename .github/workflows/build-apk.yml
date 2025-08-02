@@ -1,14 +1,7 @@
 name: Build APK
 
 on:
-  push:
-    paths-ignore:
-      - 'ios/**'
-      - 'readme.md'
-  pull_request:
-    paths-ignore:
-      - 'ios/**'
-      - 'readme.md'
+  workflow_dispatch:
 jobs:
   main:
     runs-on: ubuntu-latest
